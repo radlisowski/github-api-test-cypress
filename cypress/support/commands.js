@@ -23,3 +23,16 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+let todaysDate;
+let dd;
+let mm;
+let yyyy;
+
+Cypress.Commands.add('getCurrentDate', function() {
+    todaysDate = new Date();
+    dd = String(todaysDate.getDate()).padStart(2, '0');
+    mm = String(todaysDate.getMonth() + 1).padStart(2, '0'); //January is 0!
+    yyyy = todaysDate.getFullYear();
+    return todaysDate = yyyy + '-' + mm + '-' + dd;
+});
