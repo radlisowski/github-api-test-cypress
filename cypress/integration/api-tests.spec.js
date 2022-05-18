@@ -9,7 +9,7 @@ describe(`API PUT request Test Suit`, function () {
             method: "POST",
             auth: {
                 username: "radTesting",
-                password: "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"
+                password: "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"
             },
             url: "user/repos",
             body:{
@@ -33,7 +33,7 @@ describe(`API PUT request Test Suit`, function () {
             url: "repos/radTesting/new-repo-test",
             auth: {
                 username: "radTesting",
-                password: "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"
+                password: "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"
             },
             body: {
                 "name": "updated-repo-test"  
@@ -54,7 +54,7 @@ describe(`API PUT request Test Suit`, function () {
             url: "repos/radTesting/new-repo-test",
             auth: {
                 username: "radTesting",
-                password: "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"
+                password: "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"
             },
             body: {
                 "id": 123  
@@ -80,7 +80,7 @@ function deleteRepo(repoName) {
         url: "repos/radTesting/" + repoName,
         auth: {
             username: "radTesting",
-            password: "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"
+            password: "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"
         }
     })
 
